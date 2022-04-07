@@ -1,0 +1,8 @@
+#navigation { position: static;}
+img{ -ms-interpolation-mode:bicubic }
+.tree .married-to { position: absolute; top: 90px; }
+#mainwrap, #home #content, #cols, .placeholder, .zoom-wrapper { zoom: 1; }
+
+.jqZoomPup { filter: alpha(opacity = 30); }
+
+.preload{ filter: alpha(opacity = 80); }

@@ -1,0 +1,657 @@
+/*
+ ***************************************************************
+ HENRY VIII
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ Description:	Core stylesheet
+ Filename:	core.css
+
+ ===============================================================
+ Color Palette
+ --------------------------------------------------------------- 
+
+ grey - #d9d9d9;
+ faded red - #c41d28;
+ brown - #7b3700;
+
+ */
+
+/*
+===============================================================
+=BASE 
+--------------------------------------------------------------- */
+
+/* =Links
+-------------------------------------- */
+/*a { text-decoration:none!important; }
+/*a, a:link { color: #d91027; }*/
+/*a:visited { color: #d91027; }*/
+/*a:focus, a:active  { color:#d91027; }
+a:hover {text-decoration:underline!important; }*/
+
+h2 a:link,
+h2 a:visited
+{color: #7B3700;}
+
+/* =Type - Generics 
+-------------------------------------- */
+body {  
+	background: #fff;
+	color: #444; 
+	font: normal 62.5% verdana; 
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+
+p, ol, dl, address, blockquote, pre, table { 
+	margin: 0 0 0.75em;
+	font-size: 1.1em; 
+	font-weight: normal; 
+	line-height: 1.3em; 
+}
+
+ul { 
+	margin: 0 0 0.75em;
+	/*font-size: 1.2em; */
+	font-weight: normal; 
+	line-height: 1.5em; 
+}
+
+
+/* =Lists 
+-------------------------------------- */
+ul, ol { margin:0 18px 1.8em 18px; }
+ol { list-style-type:decimal; }
+ul.no-style, ol.no-style { margin:0; padding:0; list-style:none; } 
+
+dt 	 { font-weight: bold; }
+dd 	 { margin:0 0 0.5em; }
+dd, dd li p { font-size: 1em; }
+
+
+/* =Images - default images 
+-------------------------------------- */
+
+p img { }
+p img.top   { margin-top:0; }
+
+
+/* =Headings
+-------------------------------------- */
+h1,h2,h3,h4,h5,h6 { font-weight: bold; color:#333; }
+
+h1 { margin: 0 0 0 0; font-size: 2.4em; line-height: 1.2; }
+h2 { margin: 1.2em 0 0; font-size: 1.8em; line-height: 1.4; }
+h3 { margin: 0.5em 0 0; font-size: 1.4em; }
+h4 { margin: 0.5em 0 0.5em; font-size: 1.3em; }
+h5 { font-weight: normal; font-size: 1.2em; color:#000; }
+h6 { font-weight: normal; font-size: 1.2em; color:#000; }
+
+h2.divider { border-bottom: 1px solid #ccc; clear:both; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; border: none !important; }
+
+
+/* =Phrase elements
+-------------------------------------- */
+em 	 { font-style: italic; }
+strong { font-weight: bold; }
+
+/* =Forms
+-------------------------------------- */
+form { }
+input { }
+input.text, input.textarea { }
+
+/*
+===============================================================
+03 =LAYOUT (Project Specific)
+--------------------------------------------------------------- */
+
+#page {
+	width: 960px;
+	margin: 0 auto;
+	border-bottom: 5px solid #d9d9d9;
+	position: relative;
+}
+
+#header{    
+	border-top: 0;
+	padding: 0; margin: 0;
+}
+
+#breadcrumb {
+		padding: 0;
+
+}
+
+ #wrap1 {
+	 float: right; 
+	 width: 100%;
+	 margin: 0 0 0 -250px;
+	 position: relative;
+	 padding: 0;
+}
+
+#tree-page #wrap1 {
+	margin: 0 0 0 -170px;
+}
+
+.home #wrap1 {
+	margin: 0;
+	float: none;
+}
+
+#mainwrap {
+	margin:0;
+	padding: 0;
+	position: relative;
+}
+
+#mainwrap #content{
+	height: 1%;
+	margin: 0 0 0 252px;     
+	padding: 43px 20px 45px 0px;
+	position: relative;
+	background: #fff url(../img/bg1.gif) 92% 0 no-repeat;
+}
+
+#navigation {
+	float:left;
+	width: 212px;
+	font-size: 105%;
+	line-height: 1.3em;
+	margin: 26px 0 0 0;
+	padding: 0 0 0 20px;
+	position: relative;
+}
+
+#footer {
+	clear: both;
+	padding: 5px;
+	margin:0;
+}
+
+/*page specific*/
+
+#home #navigation { display: none; }
+
+#home #content{
+	float: left;
+	margin: 0;
+	padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =LOGOS
+--------------------------------------------------------------------*/
+/* Main banner */
+#main-banner {
+	clear: both;
+	background: url(../img/main-banner.gif) no-repeat 0 0;
+	height: 126px;
+	width: 960px;
+}
+
+	#main-banner a {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+
+/* =NAVIGATION 
+--------------------------------------------------------------------*/
+/* level 1 */
+
+#nav { 
+	margin: 20px 20px 40px 0; 
+	background: url(../img/h-divider.gif) top left no-repeat;
+	padding-top: 9px;
+}
+#nav li {  
+	margin-bottom: 2px;
+	background: url(../img/h-divider.gif) bottom left no-repeat;
+	padding: 6px 0;
+}
+
+#nav li a {
+	display: block;
+	background: url(../img/p-small.gif) 0 0 no-repeat;
+	padding-top: 7px;
+	padding-left: 24px;
+	font-family: georgia, sans-serif;
+	color: #7b3700;
+	letter-spacing: 2px;
+	text-decoration: none!important;
+}
+
+#nav li a:hover {
+	text-decoration:underline!important;
+}
+
+#nav li a.r {
+	background: url(../img/small-r.gif) 0 0 no-repeat;
+	color: #353434;
+}
+
+#nav li a span {position: absolute; left: -999em;}
+
+
+
+/* level 2 */		
+
+#nav li ul {  
+	margin: 0; 
+	padding: 4px 0 0 0; 
+}
+
+#nav li li {  
+	background: none;
+	margin-bottom: 0px;
+	padding: 0;
+}
+
+#nav li li strong {  
+	background: none;
+	color: #666666;
+	font-weight:bold;
+	font-family: verdana, arial;
+	font-size: 1.0em;
+	letter-spacing: 0;
+	padding: 0 0 0 24px;
+	display: block;
+}
+
+#nav li li a {  
+	background: none;
+	color: #666666;
+	font-family: verdana, arial;
+	font-size: 1.0em;
+	letter-spacing: 0;
+	display: block;
+	padding: 0 0 0 24px;
+}
+
+
+#nav li.selected ul li a:hover { text-decoration: underline; font-weight: normal; border: none;}
+
+/*--------------------------------------------------------------------
+=CONTENT
+--------------------------------------------------------------------*/
+/* level one page */
+/*.main-col p.first { margin-top: -44px; } */
+.main-col p { width: 450px; margin-bottom: 20px;}
+.main-col p a { text-decoration: underline!important;}
+.main-col { position: relative; }
+
+/*threecols*/
+
+#cols .col-third {
+	float: left;
+	width: 280px;
+	padding: 0 20px;
+	background: url(../img/v-divider.gif) no-repeat 100% 0;
+}
+
+#cols .col-third p {
+	padding: 15px 10px 0 4px;
+}
+
+#cols .col-third h2 {
+	width: 126px;
+	background: url(../img/big-p.gif) no-repeat 0 0;
+	padding: 14px 0 0 40px;
+	font-family: georgia, sans-serif;
+	color: #7b3700;
+	font-size: 1.6em;
+	letter-spacing: 3px;
+	font-weight: normal;
+	margin-top: 14px;
+}
+
+#content #cols .first { padding-left: 0; }
+#content #cols .last { padding-right: 0; background: none; }
+
+#header p {
+	float: left;
+	padding: 5px 0 5px 20px;
+	margin-bottom: 0;
+	font-size: 0.9em;
+}
+
+ul.breadcrumb {
+	float: left;
+	margin: 0 0 0 5px;
+	padding: 5px 0;
+	font-size: 1.1em;
+}
+
+ul.breadcrumb li {
+	float: left;
+	white-space: nowrap;
+	list-style-type: none;
+	padding-right: 5px;
+}
+
+ul.breadcrumb li a {
+	text-decoration: underline;
+	background: url(../img/gt1.gif) no-repeat right center;
+	padding-right: 13px;
+	color: #000;
+}
+
+.quarters { margin-top: 25px; }
+
+#content .quarters .right { margin-right: 0; }
+
+.quarters .quart {
+	float: left;
+	margin-bottom: 30px;
+	margin-right: 21px;
+}
+
+.quart a.image { padding: 0; }
+
+.quart a span {
+	padding: 5px;
+	display: block;
+}
+
+.quart a {
+	font-size: 1.2em;
+	display: block;
+	text-align: right;
+	padding: 5px;
+	font-family: verdana;
+	color: #fff;
+	background: #000 url(../img/arrow1.gif) 0 0;
+}
+
+.quart a:visited {
+	color: #fff;
+
+}
+
+/*normal content pages*/
+
+#level1 h1 { /* same as col h2 */
+	background: url(../img/big-p.gif) no-repeat 0 0;
+	padding-left: 40px;
+	font-family: georgia, sans-serif;
+	color: #7b3700;
+	font-size: 1.6em;
+	padding-top: 16px;
+	letter-spacing: 3px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+
+/*Big letters*/
+#level1 h1.w { background: url(../img/big-w.jpg) no-repeat 0 0; }
+#level1 h1.b { background: url(../img/big-b.jpg) no-repeat 0 0; }
+#level1 h1.c { background: url(../img/big-c.jpg) no-repeat 0 0; }
+#level1 h1.i { background: url(../img/big-i.jpg) no-repeat 0 0; }
+#level1 h1.o { background: url(../img/big-o.jpg) no-repeat 0 0; }
+#level1 h1.p { background: url(../img/big-p.jpg) no-repeat 0 0; }
+#level1 h1.s { background: url(../img/big-s.jpg) no-repeat 0 0; }
+#level1 h1.r { background: url(../img/big-r.jpg) no-repeat 0 0; }
+#level1 h1 span { position: absolute; left: -9999em; }
+
+
+/* FAMILY TREE */
+
+#tree-page span { position: absolute; left: -9999em; }
+
+	ul.tree dt { /* e.g Elizabeth of York */
+		padding: 5px 14px 0;
+		font-size: 1em;
+		font-weight: bold;
+	}
+
+	ul.tree dl dt { /* e.g Born */
+		font-size: 0.8em;
+		font-weight: normal;
+		color: #fff;
+		float: left;
+		display: inline;
+		padding: 0 6px;
+	}
+
+	ul.tree .henry { 
+		padding-right: 113px;
+		background: #716b6b url(../img/portrait1.jpg) right top no-repeat;
+		color: #fff;
+	}
+
+	#tree-page .henry h3 { color: #fff; }
+		
+	.key .reign, 
+	ul.tree dl .reign { 
+		padding-left: 0px;
+		background: url(../img/reign.gif) 0 0 no-repeat;
+		height: 1.3em;
+		width: 18px;
+		margin-top: 5px;
+	}
+
+	ul.tree .henry .reign { background: url(../img/reign-dark.gif) 0 0 no-repeat; }
+
+	.key .married,
+	ul.tree .married { 
+		padding-left: 0px;
+		background: url(../img/rings.gif) 0 0 no-repeat;
+		height: 1.3em;
+		width: 18px;
+		margin-top: 5px;
+	}
+
+	ul.tree dl dd { /* e.g 1466 */
+		float: left;
+		font-size: 0.8em;
+		display: inline;
+		margin: 0;
+	}
+
+
+	ul.tree  dt.born {
+		padding-left: 0;
+	}
+
+	ul.tree  dl dt.died {
+	}
+
+
+li.person {
+	float: left;
+	width: 103px;
+	height: 86px;
+	background: #ccc;
+	margin-right: 20px;
+	font-family: georgia, sans-serif;
+	min-height: 7.2em;
+	display: inline;
+}
+
+.person dl { 
+	margin: 0 auto;
+	padding-left: 5px;
+	width: 98px;
+}
+
+.person dl dt.only1 {  /* singular dt dd */
+	margin-left: 18px;
+}
+.person dl dd.only2 {  /* singular dt dd */
+	width: 58px;
+	text-align: left;
+}
+
+.tree .first { 
+	margin-left: 31px; 
+	margin-right: 60px;
+}
+
+.tree .second { margin-left: 129px; }
+.tree .third { margin-left: 41px; }
+
+.tree .married-to {
+	display: block;
+	font-style: italic;
+	width: 40px;
+	height: 20px;
+	position: absolute;
+	right: 358px;
+}
+
+#tree-page #content h2 { 
+	background: none; margin: 0;
+	padding: 20px 0;
+	text-align: left;
+	text-indent: 125px;
+}
+
+	#tree-page #content h2.siblings {
+		background: url(../img/tree-row1.gif) 57% 0 no-repeat;
+		padding: 16px 0 15px;
+		text-indent: 362px;
+	}
+
+	#tree-page #content h2.wives {
+		background: url(../img/tree-row2.gif) 50% 0 no-repeat;
+		padding: 23px 0 14px;
+		text-align: left;
+		text-indent: 430px;
+	}
+
+	#tree-page #content h2.children {
+		background: url(../img/tree-row3.gif) 17% 0 no-repeat;
+		padding: 15px 0 28px;
+		text-align: left;
+		text-indent: 146px;
+	}
+
+
+#tree-page h3 {
+	margin: 0;
+	padding: 5px 14px 0;
+	font-size: 1em;
+	color: #000;
+	font-weight: bold;
+	font-style: normal;
+}
+
+#tree-page #content {
+	padding: 42px 0 114px 0;
+	text-align: center;
+	margin: 0 0 0 156px;
+	background: #fff;
+}
+
+#tree-page #navigation {
+	width: 147px;
+	height: 1%;
+	position: relative;
+}
+
+#tree-page h1 {
+	padding: 32px 30px 50px;
+	font-size: 1.6em;
+	letter-spacing: 3px;
+	float: left;
+	display: inline;
+	font-family: georgia, sans-serif;
+	background: #fff url(../img/rose1.jpg) center center no-repeat;
+	color: #7b3700;
+	font-weight: normal;
+}
+
+.tree { float: left; margin: 0; padding: 0; }
+
+.key, #tree-page h2, #tree-page h3, #tree-page h4, #tree-page h5 {
+	font-size: 1.2em;
+	font-family: georgia, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	color: #716b6b;
+}
+
+/*key*/
+/*/////////////////////////////////////////////////////////////////////////////////*/ 
+
+.key-container {
+	width: 100px;
+	position: absolute;
+	bottom: 10px;
+	right: 39px;
+}
+
+	.key dt {
+		padding: 0;
+		margin: 0;
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	.key dt { float: left; }
+	.key dt.reign { background: url(../img/reign-white.gif) 0 0 no-repeat; }
+	.key dt.married { background: url(../img/rings-white.gif) 0 0 no-repeat; }
+
+
+img.normal {
+	margin: 20px 0;
+	width: 450px;
+}
+
+/*skip links*/
+/*/////////////////////////////////////////////////////////////////////////////////*/ 
+#skips {
+	position: absolute;
+	left: 0;
+	top: 22px;
+	font-weight: bold;
+	width: 120px;
+	visibility:hidden;
+}
+
+#skips a:focus, #skips a:active {
+	text-transform: uppercase;
+	background: #860B0B;
+	color: #fff;
+	position: absolute;
+	font-size: 1.12em;
+	top: 10px;
+	padding: 4px 5px 2px;
+}
+
+#skips a { position: absolute; top: -100px; }
+
+
+/*------------------------------------------------------------------------------
+=CLASS - General util
+------------------------------------------------------------------------------  */
+.left	{ float: left; }
+.right	{ float: right; }
+.clear  { clear: both; }
+.bold { font-weight:bold; }
+.nowrap { white-space: nowrap;}
+.hide, .hidden, .print-logo { display:none; }
+.cl  {clear:both; height:30px!important; }
+.clr {clear: right;}
+.cll {clear: left;}
+h2 span, .ax {position: absolute; left: -999em;}
+br.cl, div.cl { height: 0; font-size: 0.1px; line-height: .0; }
+.relative {position: relative;}

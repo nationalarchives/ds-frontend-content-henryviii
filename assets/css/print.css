@@ -1,0 +1,13 @@
+
+/* Print Styles */
+
+#navigation, #related, #footer {display: none;}
+
+body #iewrap {min-width: 600px; max-width: 650px;}
+
+#content, #wrap1, #wrap2, #mainwrap {
+    float: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    }
+    
